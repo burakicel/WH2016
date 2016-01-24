@@ -19,17 +19,17 @@
 <body>
 
   <div id="header">
-  <span class="logo">LoyalBase</span>
+  <span class="logo">RemedyTrack</span>
   {% if request.user.is_authenticated %}
     <ul class="menu">
       <li {% if section == "dashboard" %}class="selected"{% endif %}>
         <a href="{% url "dashboard" %}">My dashboard</a>
       </li>
       <li {% if section == "stores" %}class="selected"{% endif %}>
-        <a href="#">Stores</a>
+        <a href="#">Doctors</a>
       </li>
       <li {% if section == "offers" %}class="selected"{% endif %}>
-        <a href="#">Offers</a>
+        <a href="#">Hospitals</a>
       </li>
     </ul>
   {% endif %}
